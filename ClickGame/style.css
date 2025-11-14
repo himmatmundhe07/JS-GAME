@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    text-align: center;
+     background: linear-gradient(90deg, #5672eb 0%, #915dc6 100%);
+}
+ 
+.container{
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 2vh; */
+    box-shadow: 4px 4px 20px #48517a;
+    border-radius: 2vh;
+    justify-self: center;
+    background-color: white;
+    width: 40vw;
+     
+    position: relative;
+}
+.container h1{
+    color: #915dc6;
+    margin: 2.5vh;
+    font-size: 3vw;
+}
+.container p{
+    color: gray;
+     margin-bottom: 2vw;
+     font-size: 2vw;
+}
+.score-section{
+    margin-bottom: 2vw;
+    display: flex;
+    justify-content: center;
+    gap: 5vh;
+}
+.score-box{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    
+     background: linear-gradient(90deg, #5672eb 0%, #915dc6 100%);
+     border-radius: .4vw;
+     width: 15vw;
+     height: 8vw;
+}
+.score-box h2{
+    margin: 1vw;
+    font-size: 1.8vw;
+    font-weight: bolder;
+}
+.score{
+    font-size: 3vw;
+    font-weight: bolder;
+}
+.timer-section{
+     background-color: rgb(243, 241, 241);
+    height: 7vw;
+    border-radius: 1vw;
+    margin-left: 3.5vw;
+    width: 33vw;
+} 
+.timer-section h2{
+    font-size: 2vw;
+    padding: .2vw;
+}
+#timer{
+    
+    color: #915dc6;
+    font-weight: bolder;
+    font-size: 4vw;
+}
+.button-section{
+    display: flex;
+    flex-direction: column;
+
+}
+#clickButton{
+    background-color: rgb(219, 219, 219);
+    height: 5vw;
+    color: white;
+    font-weight: 900;
+    font-size: 2vw;
+    border: none;
+    border-radius: 1vw;
+    margin-left: 3.5vw;
+    margin-top: 1vw;
+    width: 33vw;
+    transition: 0.3s ease;
+    cursor: not-allowed;
+    
+}
+#startButton{
+    color: white;
+    font-weight: 900;
+    font-size: 1.5vw;
+     background: linear-gradient(90deg, #5672eb 0%, #915dc6 100%);
+    height: 5vw;
+    border: none;
+    border-radius: 1vw;
+    margin-left: 3.5vw;
+    margin-top: 1vw;
+    width: 33vw;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+#startButton:hover{
+    transform: scale(1.02);
+}
+#resetButton:hover{
+    transform: scale(1.02);
+}
+#resetscore:hover{
+    transform: scale(1.02);
+}
+#clickButton:hover{
+    transform: scale(1.02);
+}
+#resetButton{
+    background-color: #ff6b6b;
+    height: 3vw;
+    border: none;
+    border-radius: 1vw;
+    margin-left: 3.5vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    width: 33vw;
+    color: white;
+    font-weight: 700;
+    font-size: 1.2vw;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+#resetScore{
+    background-color: #f9c946;
+    height: 3vw;
+    border: none;
+    border-radius: 1vw;
+    margin-left: 10vw;
+    margin-top: 0vw;
+    margin-bottom: 2vw;
+    width: 20vw;
+    color: white;
+    font-weight: 700;
+    font-size: 1.2vw;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.status-message{
+    font-weight: bolder;
+    font-size: 1.6vw;
+}
+.playbtn{
+    margin-bottom: 1vw;
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+}
+.pause-btn{
+    background-color: rgb(253, 132, 233);
+    color: white;
+    font-size: 1.1vw;
+    font-weight: bold;
+    border: none;
+    border-radius: 1.1vw;
+    padding: 1vw;
+    width: 16vw;
+}
+.resume-btn{
+    display: none;
+    background-color: rgb(50, 249, 146);
+    color: white;
+    font-size: 1.1vw;
+    font-weight: bold;
+    border: none;
+    border-radius: 1.1vw;
+    padding: 1vw;
+    width: 16vw;
+}
+.video1{
+    display: none;
+    width: 100%;
+    height: 0vh;
+    z-index: -1;
+}
